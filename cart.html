@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng - Model Car World</title>
+    <link rel="stylesheet" href="style.css?v=3">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <span><i class="fas fa-phone"></i> Hotline: 0909 123 456</span>
+            <span><i class="fas fa-truck"></i> Giao hàng toàn quốc</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <h1>MOTIF</h1>
+                </a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm mẫu xe...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-actions">
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                <a href="#" class="mobile-nav-toggle"><i class="fas fa-bars"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> TRANG CHỦ</a></li>
+                <li><a href="#">Hàng Mới Về</a></li>
+                <li><a href="#">Xe Ô Tô</a></li>
+                <li><a href="#">Phụ Kiện</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container cart-page-layout">
+        <h2>Giỏ Hàng Của Bạn</h2>
+
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                    <th>Xóa</th>
+                </tr>
+            </thead>
+            <tbody id="cartTableBody">
+                <!-- Cart items rendered by JS -->
+            </tbody>
+        </table>
+
+        <div class="cart-summary">
+            <h3>Tổng cộng: <span id="cartTotal">0₫</span></h3>
+            <button class="checkout-btn">Tiến Hành Thanh Toán</button>
+            <a href="index.html" class="continue-shopping">Tiếp tục mua hàng</a>
+        </div>
+    </main>
+
+    <!-- Checkout Modal -->
+    <div id="checkoutModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalForm">
+                <h2>Thông Tin Đặt Hàng</h2>
+                <form id="checkoutForm">
+                    <div class="form-group">
+                        <label>Họ và Tên</label>
+                        <input type="text" id="customerName" placeholder="Nhập họ tên...">
+                    </div>
+                    <div class="form-group">
+                        <label>Số Điện Thoại <span style="color:red">*</span></label>
+                        <input type="tel" id="customerPhone" placeholder="Nhập số điện thoại..." required>
+                    </div>
+                    <div class="form-group">
+                        <label>Địa Chỉ Giao Hàng</label>
+                        <textarea id="customerAddress" rows="3" placeholder="Nhập địa chỉ..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Hình Thức Thanh Toán</label>
+                        <div class="payment-options">
+                            <label class="radio-option">
+                                <input type="radio" name="payment" value="cod" checked>
+                                Thanh toán khi nhận hàng (COD)
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="payment" value="bank">
+                                Chuyển khoản ngân hàng
+                            </label>
+                        </div>
+                        <div id="bankInfo" class="bank-info" style="display: none;">
+                            <p><strong>Ngân hàng MB Bank</strong></p>
+                            <p>STK: 0123456789</p>
+                            <p>Chủ TK: NGUYEN VAN A</p>
+                            <p>Nội dung: SĐT + Tên</p>
+                        </div>
+                    </div>
+
+                    <div class="modal-actions">
+                        <button type="submit" class="confirm-btn">XÁC NHẬN ĐẶT HÀNG</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Success Message Container (Hidden by default) -->
+            <div id="successMessage" style="display: none; text-align: center;">
+                <i class="fas fa-check-circle" style="font-size: 3rem; color: #4CAF50; margin-bottom: 20px;"></i>
+                <h3 style="color: #4CAF50;">Đặt Hàng Thành Công!</h3>
+                <p>Cảm ơn bạn! Đơn hàng đã được ghi nhận.</p>
+                <p>Shop sẽ liên hệ qua SĐT để chốt đơn sớm nhất.</p>
+                <button type="button" class="confirm-btn" onclick="closeCheckoutModal()"
+                    style="margin-top: 20px;">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Về Chúng Tôi</h3>
+                <img src="footer-logo.png" alt="Motif Logo" class="footer-logo">
+                <p>Chuyên cung cấp các loại mô hình xe ô tô chính hãng với giá tốt nhất.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liên Hệ</h3>
+                <p>Email: contact@modelcar.vn</p>
+                <p>Hotline: 0909 123 456</p>
+                <p>Địa chỉ: TP. Hồ Chí Minh</p>
+            </div>
+            <div class="footer-section">
+                <h3>Theo Dõi</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/people/MOTIF-M%C3%B4-h%C3%ACnh-xe-qu%C3%A0-t%E1%BA%B7ng/61586273497077/"
+                        target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/motif.cars/?igsh=MWhudWFuMGJoaTcyMA%3D%3D" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@motif.cars?_r=1&_t=ZS-93089xCm9aO" target="_blank"><i
+                            class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Model Car World. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js?v=5"></script>
+</body>
+
+</html>
