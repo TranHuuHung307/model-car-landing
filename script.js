@@ -2,9 +2,10 @@ const products = [
     { id: 1, name: "Siêu phẩm Lamborghini & Bugatti (Combo)", price: 950000, image: "images/prod-1.jpg", brand: "Lamborghini", scale: "1:24", tag: "new", tagLabel: "Mới" },
     { id: 2, name: "Tranh Mô Hình Bugatti La Voiture Noire", price: 1550000, image: "images/prod-2.jpg", brand: "Bugatti", scale: "1:24", tag: "sale", tagLabel: "Hot" },
     { id: 3, name: "Tranh Mô Hình Bugatti (Top View)", price: 1450000, image: "images/prod-3.jpg", brand: "Bugatti", scale: "1:24", tag: null, tagLabel: null },
-    { id: 4, name: "Mô hình xe Ferrari LaFerrari 1:24 Bburago", price: 480000, image: "https://placehold.co/300x200/png?text=Ferrari+LaFerrari", brand: "Ferrari", scale: "1:24", tag: null, tagLabel: null },
-    { id: 5, name: "Mô hình xe Lamborghini Sian FKP 37 1:18", price: 1200000, image: "https://placehold.co/300x200/png?text=Lamborghini+Sian", brand: "Lamborghini", scale: "1:18", tag: "hot", tagLabel: "Hot" },
-    { id: 6, name: "Mô hình xe Hot Wheels Night Speed chính hãng", price: 79000, image: "https://placehold.co/300x200/png?text=Hot+Wheels", brand: "Khác", scale: "1:64", tag: null, tagLabel: null }
+    { id: 4, name: "Tranh Mô Hình Porsche 911 Turbo S (Trắng)", price: 1450000, image: "images/prod-4.jpg", brand: "Porsche", scale: "1:24", tag: "new", tagLabel: "Mới" },
+    { id: 5, name: "Tranh Mô Hình Porsche 911 Turbo S (Đen)", price: 1450000, image: "images/prod-5.jpg", brand: "Porsche", scale: "1:24", tag: null, tagLabel: null },
+    { id: 6, name: "Tranh Mô Hình Maybach S650", price: 1450000, image: "images/prod-6.jpg", brand: "Mercedes-Benz", scale: "1:24", tag: "hot", tagLabel: "Hot" },
+    { id: 7, name: "Tranh Mô Hình McLaren 720S", price: 1450000, image: "images/prod-7.jpg", brand: "McLaren", scale: "1:24", tag: null, tagLabel: null }
 ];
 
 // Helper Functions (Global)

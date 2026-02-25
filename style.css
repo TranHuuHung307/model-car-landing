@@ -1,18 +1,21 @@
 /* Global Styles */
 :root {
-    --primary-color: #0c1a2c;
-    /* Xanh đậm */
-    --secondary-color: #000000;
-    /* Đen */
-    --accent-color: #c0c0c0;
-    /* Bạc */
-    --accent-dark: #a0a0a0;
+    --primary-color: #4a1525;
+    /* Đỏ Ruby đậm (Tình yêu lãng mạn) */
+    --secondary-color: #1a050d;
+    /* Mận tối / Đen ngả đỏ */
+    --accent-color: #e2b49a;
+    /* Vàng hồng (Rose Gold) sang trọng */
+    --accent-dark: #cc9b80;
+    /* Vàng hồng đậm hơn */
     --text-color: #333333;
     --white: #ffffff;
-    --bg-color: #f8f9fa;
-    --border-color: #e0e0e0;
-    --hover-color: #0056b3;
-    /* Xanh sáng hơn cho hover */
+    --bg-color: #faf6f7;
+    /* Trắng hồng rất nhẹ */
+    --border-color: #e8d8de;
+    /* Viền hồng pastel */
+    --hover-color: #dd7a8e;
+    /* Hồng cánh sen / Rose mềm mại cho hover */
 }
 
 * {
@@ -174,7 +177,7 @@ ul {
 }
 
 .main-nav a.active {
-    background-color: #0056b3;
+    background-color: var(--hover-color);
     background-color: var(--secondary-color);
 }
 
@@ -224,9 +227,9 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+    background: linear-gradient(to bottom, rgba(74, 21, 37, 0.4), rgba(26, 5, 13, 0.8));
     background-color: transparent;
-    /* General darken */
+    /* Romantic darken */
     z-index: 2;
 }
 
