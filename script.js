@@ -1,11 +1,11 @@
 const products = [
-    { id: 1, name: "Siêu phẩm Lamborghini & Bugatti (Combo)", price: 950000, image: "images/prod-1.jpg", brand: "Lamborghini", scale: "1:24", tag: "new", tagLabel: "Mới" },
-    { id: 2, name: "Tranh Mô Hình Bugatti La Voiture Noire", price: 1550000, image: "images/prod-2.jpg", brand: "Bugatti", scale: "1:24", tag: "sale", tagLabel: "Hot" },
-    { id: 3, name: "Tranh Mô Hình Bugatti (Top View)", price: 1450000, image: "images/prod-3.jpg", brand: "Bugatti", scale: "1:24", tag: null, tagLabel: null },
-    { id: 4, name: "Tranh Mô Hình Porsche 911 Turbo S (Trắng)", price: 1450000, image: "images/prod-4.jpg", brand: "Porsche", scale: "1:24", tag: "new", tagLabel: "Mới" },
-    { id: 5, name: "Tranh Mô Hình Porsche 911 Turbo S (Đen)", price: 1450000, image: "images/prod-5.jpg", brand: "Porsche", scale: "1:24", tag: null, tagLabel: null },
-    { id: 6, name: "Tranh Mô Hình Maybach S650", price: 1450000, image: "images/prod-6.jpg", brand: "Mercedes-Benz", scale: "1:24", tag: "hot", tagLabel: "Hot" },
-    { id: 7, name: "Tranh Mô Hình McLaren 720S", price: 1450000, image: "images/prod-7.jpg", brand: "McLaren", scale: "1:24", tag: null, tagLabel: null }
+    { id: 1, name: "Siêu phẩm Lamborghini & Bugatti (Combo)", price: 660000, image: "images/prod-1.jpg", brand: "Lamborghini", scale: "1:24", tag: "new", tagLabel: "Mới" },
+    { id: 2, name: "Tranh Mô Hình Bugatti La Voiture Noire", price: 880000, image: "images/prod-2.jpg", brand: "Bugatti", scale: "1:24", tag: "sale", tagLabel: "Hot" },
+    { id: 3, name: "Tranh Mô Hình Bugatti (Top View)", price: 880000, image: "images/prod-3.jpg", brand: "Bugatti", scale: "1:24", tag: null, tagLabel: null },
+    { id: 4, name: "Tranh Mô Hình Porsche 911 Turbo S (Trắng)", price: 880000, image: "images/prod-4.jpg", brand: "Porsche", scale: "1:24", tag: "new", tagLabel: "Mới" },
+    { id: 5, name: "Tranh Mô Hình Porsche 911 Turbo S (Đen)", price: 660000, image: "images/prod-5.jpg", brand: "Porsche", scale: "1:24", tag: null, tagLabel: null },
+    { id: 6, name: "Tranh Mô Hình Maybach S650", price: 880000, image: "images/prod-6.jpg", brand: "Mercedes-Benz", scale: "1:24", tag: "hot", tagLabel: "Hot" },
+    { id: 7, name: "Tranh Mô Hình McLaren 720S", price: 660000, image: "images/prod-7.jpg", brand: "McLaren", scale: "1:24", tag: null, tagLabel: null }
 ];
 
 // Helper Functions (Global)
